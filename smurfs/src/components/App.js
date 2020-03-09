@@ -5,7 +5,7 @@ import Smurfs from "./Smurfs";
 import SmurfForm from "./SmurfForm";
 import { getSmurf } from "../reducers/action";
 
-const App = ({ message, smurfs, getSmurf }) => {
+const App = ({ message, getSmurf }) => {
   useEffect(() => {
     getSmurf();
   }, [getSmurf]);

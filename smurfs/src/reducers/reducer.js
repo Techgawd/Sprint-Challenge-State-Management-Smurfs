@@ -5,6 +5,9 @@ import {
     ADD_SMURF,
     ADD_SUCCESS,
     ADD_FAIL
+    // DELETING_SMURFS,
+    // DELETING_SMURFS_SUCCESS,
+    // DELETING_SMURFS_FAILURE
   } from "../reducers/action";
   
   const initialState = {
@@ -26,6 +29,12 @@ import {
         return { message: "Smurf added", smurfs: action.payload };
       case ADD_FAIL:
         return { ...state, message: action.payload };
+    //   case DELETING_SMURFS:
+    //     return {...state,deletingSmurf:true,}
+    //   case DELETING_SMURFS_SUCCESS:
+    //     return {...state,smurfs:action.payload,deletingSmurf:false}
+    //   case DELETING_SMURFS_FAILURE:
+    //     return {...state,deletingSmurf:false}
       default:
         return state;
     }
